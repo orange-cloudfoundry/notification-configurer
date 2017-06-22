@@ -1,0 +1,15 @@
+name: notifications
+buildpack: go_buildpack
+env:
+  DOMAIN: my.system.domain.com
+  CC_HOST: https://api.my.system.domain.com
+  ENCRYPTION_KEY: AnEcnryptionKey
+  SENDER: bosh-dev-dfy@orange.fr
+  UAA_HOST: https://uaa.my.system.domain.com
+  UAA_CLIENT_ID: notifications-client
+  UAA_CLIENT_SECRET: mysupersecret
+  # you should not touch the line below
+  GOPACKAGENAME: github.com/orange-cloudfoundry/notification-configurer
+services:
+- smtp-notification
+- mysql-notification
