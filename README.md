@@ -2,7 +2,7 @@
 
 Wrap [notifications](https://github.com/cloudfoundry-incubator/notifications) app to make it run simply on your cloud foundry.
 
-The bosh-release associated to this app also deploy the app as a cloud foundry app but do not autoconnect services as this configurer will do.
+The bosh-release associated to this app also deploys the app as a cloud foundry app but does not autoconnect services whereas this configurer will do.
 
 ## Deploy
 
